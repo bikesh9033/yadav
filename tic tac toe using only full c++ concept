@@ -123,7 +123,7 @@ public:
             cin >> move;
 
             if (!makeMove(move)) {
-                cout << "❌ Invalid move! Try again.\n";
+                cout << " Invalid move! Try again.\n";
                 continue;
             }
 
@@ -135,7 +135,7 @@ public:
 
             if (checkDraw()) {
                 displayBoard();
-                cout << "🤝 It's a draw!\n";
+                cout << " It's a draw!\n";
                 break;
             }
 
@@ -150,7 +150,7 @@ int TicTacToe::totalGames = 0;
 
 
 void displayWinner(const TicTacToe& game) {
-    cout << "🎉 Player " << game.getPlayer() << " wins!\n";
+    cout << Player " << game.getPlayer() << " wins!\n";
 }
 
 
